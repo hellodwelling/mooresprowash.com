@@ -46,11 +46,11 @@
 
 
 <div class = "flex w-full flex-col">  
-    <div  class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href= " #about ""> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N3SU6IJH3H33OZGY0GS8SLJSVHS1PZDHTUDUB47T.png" alt="Moore&#x27;s Pro Wash logo"> </a>
+        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N3SU6IJH3H33OZGY0GS8SLJSVHS1PZDHTUDUB47T.png" alt="Moore&#x27;s Pro Wash logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -102,11 +102,12 @@
     
   
 
+
     
-        <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
       
           <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
-          <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+            <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -130,8 +131,8 @@
 
     </form>
 </div>
+           
       
-          
         
     </nav>
   </div>
@@ -150,16 +151,27 @@ class="flex relative flex-col w-full  bg-blue-800 text-white  lg:flex-row lg:fle
             
             <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
             </h2>
-            <div id="cover-button">
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
+            
+            <div class="flex flex-col lg:flex-row flex-grow flex-col space-y-5 md:space-y-0 w-full lg:w-auto md:space-y-5 lg:space-y-0">
+                <div class=" w-full lg:w-auto">
                 
+  
+                </div>
+
+                <div id="cover-button" class="w-full lg:w-auto ">
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
 <button 
- id="" type="button" x-on:click.prevent="open = true" class=" inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-500 text-white hover:bg-white hover:text-blue-800">
+ id="" type="button" x-on:click.prevent="open = true" class=" 
+  w-full lg:w-auto 
+
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-500 text-white hover:bg-white hover:text-blue-800">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -183,21 +195,24 @@ class="flex relative flex-col w-full  bg-blue-800 text-white  lg:flex-row lg:fle
 
     </form>
 </div>
-
-            </div>
+    </div>
  
-            </div>
+                </div>
 
-            <div >
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
-                
+                <div>
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
 <button 
- id="side-button" type="button" x-on:click.prevent="open = true" class="mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-500 text-white hover:bg-white hover:text-blue-800">
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
+
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-500 text-white hover:bg-white hover:text-blue-800">
     <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -221,8 +236,9 @@ class="flex relative flex-col w-full  bg-blue-800 text-white  lg:flex-row lg:fle
 
     </form>
 </div>
+    </div>
 
-            </div>
+                </div>
 
             </div>
         </div>
@@ -330,6 +346,17 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     
                     
                     
+    <a 
+    target="_blank" 
+    href = "https://www.google.com/maps/place/Moore&#x27;s+Pro+Wash,+LLC/@35.2601684,-80.5312694,10z/data=!4m2!3m1!1s0x0:0x3339149f5fe1e73f?sa=X&amp;ved=2ahUKEwi96obUrerxAhWyGFkFHZjnADwQ_BIwCnoECDoQBQ"> 
+        <span 
+             
+            class = " text-green-500 "> 
+            
+            <i class="fab fa-google fa-3x lg:fa-3x "></i>
+        </span> 
+    </a> 
+
                     
                     
                     
@@ -910,7 +937,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
                 <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
                 
-                <a target= "_blank" href="https://www.facebook.com/MooresProWash/reviews/?ref=page_internal">
+                <a target= "_blank" href="https://www.google.com/maps/place/Moore&#x27;s+Pro+Wash,+LLC/@35.2601684,-80.5312694,10z/data=!4m7!3m6!1s0x0:0x3339149f5fe1e73f!8m2!3d35.2601684!4d-80.5312694!9m1!1b1"  class="w-full">
                     <button   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-green-500  hover:bg-white hover:text-blue-800 ">
                             <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
                     </button>
@@ -918,8 +945,8 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
              
                 
-                <a target= "_blank" href="https://www.facebook.com/MooresProWash/reviews/?ref=page_internal">
-                    <button  type="button" class="inline-flex w-full   items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-green-500  hover:bg-white hover:text-blue-800 ">
+                <a target= "_blank" href="https://www.facebook.com/MooresProWash/reviews/?ref=page_internal" class="w-full">
+                    <button  type="button" class="inline-flex w-full  items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-green-500  hover:bg-white hover:text-blue-800 ">
                             <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
                     </button>
                 </a>
